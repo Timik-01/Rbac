@@ -24,8 +24,8 @@ public class Resource {
         return false;
     }
 
-    public void hasAccess(User user, boolean tmp) {
-        System.out.println(user.getName() + "hat Zugriff auf" + this.name + ": " + tmp);
+    public void hasAccess(User user) {
+        System.out.println(user.getName() + " hat Zugriff auf " + this.name + ": " + canAccess(user));
     }
 
 }
